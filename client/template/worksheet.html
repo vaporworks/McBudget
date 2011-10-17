@@ -1,0 +1,73 @@
+<fieldset class="worksheet">
+    <legend><span data-bind="text: name"></span></legend>
+    <div class="container">
+        <div class="header">
+            <div class="category">Category</div>
+            <div class="budgeted">Budgeted</div>
+            <div class="actual">Actual</div>
+            <div class="cat-close">Closed</div>
+            <div class="due">Due</div>
+        </div>
+        <div class="items">
+            <div class="credit" data-bind="template: { name: 'worksheetitem', foreach: credits() }"></div>
+            <div class="expense" data-bind="template: { name: 'worksheetitem', foreach: debits() }"></div>
+        </div>
+    </div>
+    <div class="summary">
+        <div class="budgeted">
+            <div>
+                <span class="label">Budgeted Credits:</span>
+                <div class="value">
+                    <div class="currency">${"$"}</div>
+                    <div class="amount" data-bind="text: budgetCreditTotal"></div>
+                </div>
+            </div>
+            <div>
+                <span class="label">Budgeted Debits:</span>
+                <div class="value">
+                    <div class="currency">${"$"}</div>
+                    <div class="amount" data-bind="text: budgetDebitTotal"></div>
+                </div>
+            </div>
+        </div>
+        <div class="actual">
+            <div>
+                <span class="label">Actual Credits:</span>
+                <div class="value">
+                    <div class="currency">${"$"}</div>
+                    <div class="amount" data-bind="text: actualCreditTotal"></div>
+                </div>
+            </div>
+            <div>
+                <span class="label">Actual Debits:</span>
+                <div class="value">
+                    <div class="currency">${"$"}</div>
+                    <div class="amount" data-bind="text: actualDebitTotal"></div>
+                </div>
+            </div>
+        </div>
+        <div class="projected">
+            <div>
+                <span class="label">Projected Credits:</span>
+                <div class="value">
+                    <div class="currency">${"$"}</div>
+                    <div class="amount" data-bind="text: projectedCreditTotal"></div>
+                </div>
+            </div>
+            <div>
+                <span class="label">Projected Debits:</span>
+                <div class="value">
+                    <div class="currency">${"$"}</div>
+                    <div class="amount" data-bind="text: projectedDebitTotal"></div>
+                </div>
+            </div>
+            <div>
+                <span class="label">Projected Remainder:</span>
+                <div class="value">
+                    <div class="currency">${"$"}</div>
+                    <div class="amount" data-bind="text: projectedRemainder"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>

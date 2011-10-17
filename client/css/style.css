@@ -1,0 +1,153 @@
+body {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.menu-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.menu {
+    display: inline;
+}
+
+.menu li {
+    float: left;
+    list-style-type: none;
+    margin-right: 45px;
+    padding-bottom: 40px;
+}
+
+.menu li:hover {
+    text-decoration: underline;
+}
+
+.worksheet {
+    border-radius: 10px;
+    border: 1pt solid navy;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.worksheet legend {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-size: 20pt;
+    color: navy;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.worksheet .container {
+    float: left;
+}
+
+.worksheet .summary {
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.worksheet .summary .budgeted {
+    margin-bottom: 50px;
+}
+
+.worksheet .summary .actual {
+    margin-bottom: 100px;
+}
+
+.worksheet .summary .label {
+    clear:both;
+    float: left;
+    margin-right: 10px;
+}
+
+.worksheet .summary .value {
+    float: right;
+}
+
+.worksheet .summary .currency {
+    float: left;
+    margin-right: 3px;
+}
+
+.worksheet .summary .amount {
+    float: right;
+    width:70px;
+    text-align: right;
+}
+
+.header div {
+    float: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.header div.category {
+    width:170px;
+}
+
+.header div.budgeted {
+    width:100px;
+    text-align: right;
+}
+
+.header div.actual {
+    width:100px;
+    text-align: right;
+}
+
+.header div.cat-close {
+    width: 80px;
+    text-align: center;
+}
+
+.header .due {
+    margin-left: 35px;
+    text-align: center;
+}
+
+.credit-item {
+    clear: left;
+}
+
+.credit-item div {
+    float: left;
+}
+
+.credit-item div.category {
+    width: 170px;
+}
+
+.credit-item div.budgeted {
+    width: 100px;
+    text-align: right;
+}
+
+.credit-item .budgeted input {
+    width:55px;
+    text-align: right;
+    margin-left: 3px;
+}
+
+.credit-item div.actual {
+    width: 100px;
+    text-align: right;
+}
+
+.credit-item .actual input {
+    width:55px;
+    text-align: right;
+    margin-left: 3px;
+}
+
+.credit-item .cat-close {
+    margin-left: 28px;
+}
+
+.credit-item .due {
+    margin-left: 40px;
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>McBudget</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="js/jquery.tmpl.js"></script>
+        <script type="text/javascript" src="js/js-signals.js"></script>
+        <script type="text/javascript" src="js/Hasher.js"></script>
+        <script type="text/javascript" src="js/crossroads.js"></script>
+        <script type="text/javascript" src="js/amplify.min.js"></script>
+        <script type="text/javascript" src="js/knockout-1.2.1.js"></script>
+        <script type="text/javascript" src="js/koExternalTemplateEngine.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="menu-container">
+            <ul class="menu" data-bind="template: { name: 'navigation', foreach: menu }"></ul>
+        </div>
+        <br clear="all" />
+        <div data-bind="template: { name: 'worksheet', data: currentWorksheet }"></div>
+    </body>
+</html>
